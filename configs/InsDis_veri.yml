@@ -1,0 +1,37 @@
+MODEL:
+  BACKBONE: "resnet50"
+  GCB:
+    ratio: 0.0625
+
+
+DATASETS:
+  NAMES: ("veri",)
+  TEST_NAMES: "veri"
+
+DATALOADER:
+  SAMPLER: 'InsDis'
+  NUM_INSTANCE: 4
+
+SOLVER:
+  OPT: "adam"
+  LOSSTYPE: ('InsDis',)
+  MAX_EPOCHS: 120
+  BASE_LR: 0.003
+  WEIGHT_DECAY: 0.0001
+  WEIGHT_DECAY_BIAS: 0.0001
+  IMS_PER_BATCH: 256
+
+  STEPS: [40, 80]
+  GAMMA: 0.1
+
+  WARMUP_FACTOR: 0.01
+  WARMUP_ITERS: 10
+
+  EVAL_PERIOD: 10
+
+TEST:
+  IMS_PER_BATCH: 512
+  WEIGHT: "path"
+
+
+

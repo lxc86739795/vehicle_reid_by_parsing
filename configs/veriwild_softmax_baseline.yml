@@ -1,0 +1,38 @@
+MODEL:
+  BACKBONE: "resnet50"
+  GCB:
+    ratio: 0.0625
+
+
+DATASETS:
+  NAMES: ("veriwild",)
+  TEST_NAMES: ("veriwild",)
+
+DATALOADER:
+  SAMPLER: 'triplet'
+  NUM_INSTANCE: 4
+
+SOLVER:
+  OPT: "adam"
+  LOSSTYPE: ('softmax',)
+  MAX_EPOCHS: 100
+  BASE_LR: 0.00035
+  WEIGHT_DECAY: 0.0005
+  WEIGHT_DECAY_BIAS: 0.0005
+  IMS_PER_BATCH: 256
+
+  STEPS: [40, 80]
+  GAMMA: 0.1
+
+  WARMUP_FACTOR: 0.01
+  WARMUP_ITERS: 0
+
+  EVAL_PERIOD: 10
+  LOG_INTERVAL: 10
+
+TEST:
+  IMS_PER_BATCH: 512
+  WEIGHT: "path"
+
+
+
