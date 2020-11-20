@@ -12,7 +12,7 @@ This code is based on [reid strong baseline](https://github.com/michuanhaohao/re
 - Cython (optional to compile evaluation code)
 - tensorboard (needed for visualization): `pip install tensorboard`
 
-## Data Preparing
+## Data Preparation
 
 To train a vehicle reid model with parsing, you need the original image datasets like [VeRi](https://github.com/JDAI-CV/VeRidataset) and the parsing masks of all images.
 For a vehicle parsing model pretrained on the [MVP dataset](https://lxc86739795.github.io/MVP.html) based on PSPNet or HRNet, please contact [Xinchen Liu](https://lxc86739795.github.io/).
@@ -20,6 +20,22 @@ For a vehicle parsing model pretrained on the [MVP dataset](https://lxc86739795.
 ## Training
 
 You can run the examplar training script in `.sh` files.
+
+## Main Code
+
+The main code for GCN can be found in 
+```bash
+root
+  engine
+    trainer_selfgcn.py    # training pipline
+  modeling
+    baseline_selfgcn.py   # definition of the model
+  tools
+    train_selfgcn.py      # training preparation
+
+```
+
+The code for data io and sampler also be modified for the parsing based reid method.
 
 
 ## Reference
