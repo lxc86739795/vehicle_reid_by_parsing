@@ -15,7 +15,7 @@ This code is based on [reid strong baseline](https://github.com/michuanhaohao/re
 ## Data Preparation
 
 To train a vehicle reid model with parsing, you need the original image datasets like [VeRi](https://github.com/JDAI-CV/VeRidataset) and the parsing masks of all images.
-For a vehicle parsing model pretrained on the [MVP dataset](https://lxc86739795.github.io/MVP.html) based on PSPNet or HRNet, please contact [Xinchen Liu](https://lxc86739795.github.io/).
+For vehicle parsing models pretrained on the [MVP dataset](https://lxc86739795.github.io/MVP.html) based on PSPNet/DeepLabV3/HRNet, please refer to this [repo](https://github.com/lxc86739795/parsing_platform).
 
 ## Training
 
