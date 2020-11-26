@@ -40,17 +40,6 @@ The code for data io and sampler also be modified for the parsing based reid met
 
 ## Reference
 ```BibTeX
-@inproceedings{mm/LiuZLSM19,
-  author    = {Xinchen Liu and
-               Meng Zhang and
-               Wu Liu and
-               Jingkuan Song and
-               Tao Mei},
-  title     = {BraidNet: Braiding Semantics and Details for Accurate Human Parsing},
-  booktitle = ACM MM,
-  pages     = {338--346},
-  year      = {2019}
-}
 
 @inproceedings{mm/LiuLZY020,
   author    = {Xinchen Liu and
