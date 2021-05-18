@@ -37,6 +37,9 @@ root
 
 The code for data io and sampler also be modified for the parsing based reid method.
 
+## License
+
+PCRNet is released under the [Apache 2.0 license](LICENSE).
 
 ## Reference
 ```BibTeX
